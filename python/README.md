@@ -55,6 +55,14 @@ We use `main_kernelnet.py` to train a new model. (please modify the `root_path` 
 The model weights will be saved in `./checkpoints` folder.
 
 ## Test a trained model
+To test a well-trained model, we use `evaluate_model.py`, the output results will be save in `./outputs/figures`.
+
+Some pre-trained models are provides in `./checkpoints`.
+
+## Other files
+The codes in `deconv2D_real.py`, `deconv3D_real.py`, `deconv3D_live.py`, and `deconv3D_w_gt.py` are used to deconv the real 2D biological images in BioSR data set, real 3D biological images in Confocal/STED volume data set, and 3D volumes in LLSM volume data set, respectively. 
+
+
 
 
 
