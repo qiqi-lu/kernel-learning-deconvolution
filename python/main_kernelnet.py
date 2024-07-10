@@ -16,7 +16,8 @@ from models import kernelnet
 print('='*98)
 if sys.platform == 'win32': 
     device, num_workers = torch.device("cpu"), 0
-    root_path = os.path.join('F:', os.sep, 'Datasets')
+    # root_path = os.path.join('F:', os.sep, 'Datasets')
+    root_path = 'data'
 
 if sys.platform == 'linux' or sys.platform == 'linux2': 
     device, num_workers = torch.device("cpu"), 0
