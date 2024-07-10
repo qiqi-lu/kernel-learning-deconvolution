@@ -8,6 +8,10 @@ It enhances the deconvolution performance and speed through learning the forward
 
 KLD only requires one training sample and two iterations to achieve superior deconvolution perfromance and speed compared to traditional RLD and its variants (which using an unmatched backeard kernel, such as Gaussian, Butterworth, and Wiener-Butterworth (WB) backward kernels).
 
+## Structures
+The source codes (Python and MATLAB) are saved in `python`.
+The source codes for software are saved in `software`. (coming soon ...)
+
 ## Instructions
 For derails instructions, see the `ReadMe.md` in the folder `python` or `software` folder, respectively.
 
