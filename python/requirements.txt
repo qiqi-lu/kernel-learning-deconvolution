@@ -1,0 +1,9 @@
+torch==2.0
+torchvision
+tensorboard
+numpy
+matplotlib
+scikit-image
+pydicom
+pytorch-msssim
+fft-conv-pytorch
