@@ -1,0 +1,10 @@
+mt_01.tif
+mt_02.tif
+mt_03.tif
+mt_04.tif
+mt_05.tif
+mt_06.tif
+mt_07.tif
+mt_08.tif
+mt_09.tif
+mt_10.tif
