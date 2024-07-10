@@ -8,11 +8,13 @@ This package includes:
 - Python implementation of conventional Richardson-Lucy Deconvolution (RLD) with different backward kernels, includeing traditional, Gaussian, Butterworth, Wiener-Butterworth (WB).
 
 ## File structure
-`data stes`: includes the example simulation data used to training and test methods.
+`./data`: includes the example simulation data used to training and test methods, and partial publicly accessiable fluorescence microscopic images (including BioSR, Confocal/STED volumes, LLSM volumes). The complete data sets are accessiable from the original repositry.
 
-`models`: includes the Python codes of `KLD`.
+`./models`: includes the Python codes of `KLD` (`./models/kernelnet.py`). 
 
-`methods`: includes the Matlab codes of `DeconvBlind` and Python codes of RLD using different backward kernsls.
+`./checkpoints`: include the saved models for different data set.
+
+`./methods`: includes the Matlab codes of `DeconvBlind` and Python codes of RLD using different backward kernsls.
 
 ## Enviroment
 We run our codes on Windows 11 (optional) without GPU. The version of Python is 3.11.9, which must high then 3.7.
@@ -35,9 +37,27 @@ $ conda create -n kld python=3.11.9
 $ conda activate kld
 $ pip install -r requirements.txt
 ```
+Please always pay attention to the path setting in the code, and modifiy the to your own working path.
+
 ## Training data set generation
 ### Simulation data set
-We use MATLAB code in [Richardson-Lucy-Net](https://github.com/MeatyPlus/Richardson-Lucy-Net/tree/main/Phantom_generate) to generate simulated phantoms with bead structures or mixed structures. The modified codes are save in `Phantom_generate` folder.(please modify the data save path to `data`)
+1. We use MATLAB code in [Richardson-Lucy-Net](https://github.com/MeatyPlus/Richardson-Lucy-Net/tree/main/Phantom_generate) to generate simulated phantoms with bead structures or mixed structures. The modified codes are save in `Phantom_generate` folder.(please modify the save path to `data`)
+
+2. We use `generate_synthetic_data.py` to generate the simulated data sets with different noise level. The generated data sets will be saved in `./data/RLN/`
+
+### Real biology images
+For the images in BioSR and Confocal/STED volume data set, the images should be preprocessing before training. 
+We use `real_data_preprocessing.py` to preprocess the real biology images in BioSR and Confocal/STED volume data set.
+
+## Train a new model
+We use `main_kernelnet.py` to train a new model. (please modify the `root_path` to the path saved data sets)
+
+The model weights will be saved in `./checkpoints` folder.
+
+## Test a trained model
+
+
+
 
 
 
