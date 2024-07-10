@@ -1,10 +1,43 @@
 # KLD (Kernel Learning Deconvolution)
 
-This repsitory consists of the python codes for the paper "**Kernel learning enables fluorescence microscopic image deconvolution with enhanced performance and speed**"
+These are the source python codes and instructions for KLD.
 
-## Introduction 
-KLD is an algorithm for fluorescence microscopic image deconvolution.
-It enhances the deconvolution performance and speed through learning the forward kernel and backward kernel in conventional Richardson-Lucy Deconvolution (RLD) algorithm.
+This package includes:
+- Python implementation of training and inference of KLD
+- MATLAB implementation of training data simulation
+- Python implementation of conventional Richardson-Lucy Deconvolution (RLD) with different backward kernels, includeing traditional, Gaussian, Butterworth, Wiener-Butterworth (WB).
 
-KLD only requires one training sample and two iterations to achieve superior deconvolution perfromance and speed compared to traditional RLD and its variants (which using an unmatched backeard kernel, such as Gaussian, Butterworth, and Wiener-Butterworth (WB) backward kernels).
+## File structure
+`data stes`: includes the example simulation data used to training and test methods.
+
+`models`: includes the Python codes of `KLD`.
+
+`methods`: includes the Matlab codes of `DeconvBlind` and Python codes of RLD using different backward kernsls.
+
+## Enviroment
+We run our codes on Windows 11 (optional) without GPU. The version of Python is 3.11.9, which must high then 3.7.
+
+The python package used in our projects:
+- torch==2.0
+- torchvision
+- tensorboard
+- numpy
+- matplotlib
+- scikit-image
+- pydicom
+- pytorch-msssim
+- fft-conv-pytorch
+
+To use our code, you shold create a virtual enviroment and install the required packages first:
+
+```
+$ conda create -n kld python=3.11.9 
+$ conda activate kld
+$ pip install -r requirements.txt
+```
+
+
+
+
+
 
