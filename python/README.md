@@ -8,13 +8,20 @@ This package includes:
 - Python implementation of conventional Richardson-Lucy Deconvolution (RLD) with different backward kernels, includeing traditional, Gaussian, Butterworth, Wiener-Butterworth (WB).
 
 ## File structure
-`./data`: includes the example simulation data used to training and test methods, and partial publicly accessiable fluorescence microscopic images (including BioSR, Confocal/STED volumes, LLSM volumes). The complete data sets are accessiable from the original repositry.
+`./checkpoints`: include the saved models for different data set.
+
+`./data`: includes the example simulation data used to training and test methods, and partial publicly accessiable fluorescence microscopic images (including BioSR, Confocal/STED volumes, LLSM volumes). The complete data sets are accessible from the original repositories.
+
+`./methods`: includes the MATLAB codes of `DeconvBlind` and Python codes of RLD using different backward kernsls.
 
 `./models`: includes the Python codes of `KLD` (`./models/kernelnet.py`). 
 
-`./checkpoints`: include the saved models for different data set.
+`./outputs`: saves the output results of `evaluate_model.py`.
 
-`./methods`: includes the Matlab codes of `DeconvBlind` and Python codes of RLD using different backward kernsls.
+`./Phantom_generate`: includes the MATLAB codes used to generate simulation phantoms.
+
+`./utils`: includes the functions used to processing data, quantitatively evaluation, plot images.
+
 
 ## Enviroment
 We run our codes on Windows 11 (optional) without GPU. The version of Python is 3.11.9, which must high then 3.7.
