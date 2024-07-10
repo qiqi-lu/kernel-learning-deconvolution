@@ -14,5 +14,5 @@ The source codes (Python and MATLAB) are saved in `python`.
 The source codes for software are saved in `software`. (coming soon ...)
 
 ## Instructions
-For derails instructions, see the `ReadMe.md` in the folder `python` or `software` folder, respectively.
+For derails instructions, see the `README.md` in the folder `python` or `software` folder, respectively.
 
