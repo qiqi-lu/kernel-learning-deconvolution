@@ -23,7 +23,8 @@ if dataset_name in ['SimuMix3D_382']:
     # lamb = 642 # wavelength of the emission light
     lamb = 560
 
-path_dataset    = os.path.join('F:', os.sep, 'Datasets', 'RLN', dataset_name)
+# path_dataset    = os.path.join('F:', os.sep, 'Datasets', 'RLN', dataset_name)
+path_dataset    = os.path.join('data', 'RLN', dataset_name)
 path_dataset_gt = os.path.join(path_dataset, 'gt')
 
 # ------------------------------------------------------------------------------
