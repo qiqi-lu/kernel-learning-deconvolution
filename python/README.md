@@ -35,6 +35,11 @@ $ conda create -n kld python=3.11.9
 $ conda activate kld
 $ pip install -r requirements.txt
 ```
+## Training data set generation
+### Simulation data set
+We use MATLAB code in [Richardson-Lucy-Net](https://github.com/MeatyPlus/Richardson-Lucy-Net/tree/main/Phantom_generate) to generate simulated phantoms with bead structures or mixed structures. The modified codes are save in `Phantom_generate` folder.(please modify the data save path to `data sets`)
+
+
 
 
 
