@@ -1,9 +1,9 @@
 clear all
 
 %% SET OUTPUT PATH
-pathMain1= 'F:\Datasets\RLN\SimuMix3D_128_live\gt\';
-% pathMain1= 'F:\Datasets\RLN\SimuMix3D_256\gt\';
-% pathMain1= 'F:\Datasets\RLN\SimuMix3D_382\gt\';
+pathMain1= 'data\RLN\SimuMix3D_128_live\gt\';
+% pathMain1= 'data\RLN\SimuMix3D_256\gt\';
+% pathMain1= 'data\RLN\SimuMix3D_382\gt\';
 mkdir(pathMain1)
 
 % How many simulation to generate
