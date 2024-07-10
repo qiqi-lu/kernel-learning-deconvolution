@@ -1,4 +1,4 @@
-# KLD (Kernel Learning Deconvolution)
+# Kernel Learning Deconvolution (KLD)
 
 This repsitory consists of the python codes for the paper "**Kernel learning enables fluorescence microscopic image deconvolution with enhanced performance and speed**"
 
