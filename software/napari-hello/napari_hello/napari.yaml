@@ -1,0 +1,10 @@
+name: napari-hello
+contributions:
+  commands:
+    - id: napari-hello.say_hi
+      title: Say hello, world!
+      python_name: napari_hello:show_hello_message
+  widgets:
+    - command: napari-hello.say_hi
+      display_name: Hello world
+      autogenerate: true
