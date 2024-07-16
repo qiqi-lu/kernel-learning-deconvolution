@@ -16,21 +16,22 @@ dataset_name = 'ZeroShotDeconvNet'
 # id_sample = [0, 346, 609, 700, 770, 901]
 # id_sample = [0, 346, 609, 700, 770, 901]
 # id_sample = list(range(1, 500, 10))
-id_sample = range(0, 1000, 4)
-# id_sample = [1]
+# id_sample = range(0, 1000, 4)
+id_sample = [0]
 
 # wave_length = '642'
 wave_length = '560'
 
-enable_traditonal, enable_gaussian, enable_bw, enable_wb = 0, 0, 0, 1
+# ------------------------------------------------------------------------------
+enable_traditonal, enable_gaussian, enable_bw, enable_wb = 0, 0, 0, 0
 num_iter_trad, num_iter_gaus, num_iter_bw, num_iter_wb = 30, 30, 30, 2 
 
 if wave_length == '642':
-    dataset_path = os.path.join('F:', os.sep, 'Datasets', dataset_name,\
+    dataset_path = os.path.join('data', dataset_name,\
         '3D time-lapsing data_LLSM_Mitosis_H2B', '642')
         
 if wave_length == '560':
-    dataset_path = os.path.join('F:', os.sep, 'Datasets', dataset_name,\
+    dataset_path = os.path.join('data', dataset_name,\
         '3D time-lapsing data_LLSM_Mitosis_Mito', '560')
 
 subfolder = os.path.join('Mitosis', wave_length)

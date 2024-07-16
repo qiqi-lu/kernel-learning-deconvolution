@@ -20,20 +20,21 @@ def tabulate(arr, floatfmt=".8f"):
 # dataset_name = 'F-actin_Nonlinear'
 dataset_name = 'Microtubules2'
 
-id_data = [0, 1, 2, 3, 4, 5, 6]
+# id_data = [0, 1, 2, 3, 4, 5, 6]
 # id_data = [7, 8, 9, 10]
-# id_data = [6]
+id_data = [6]
 
 scale_factor, std_gauss = 1, 9
 
 # ----------------------------------------------------------------------------
-enable_traditonal, enable_gaussian, enable_bw, enable_wb = 1, 0, 0, 0
+enable_traditonal, enable_gaussian, enable_bw, enable_wb = 0, 0, 0, 0
 num_iter_trad, num_iter_gaus, num_iter_bw, num_iter_wb = 100, 30, 30, 2 
 # num_iter_trad, num_iter_gaus, num_iter_bw, num_iter_wb = 3, 30, 30, 2 
 
 # ----------------------------------------------------------------------------
 # load data
-path_dataset  = os.path.join('F:', os.sep, 'Datasets', 'BioSR', dataset_name)
+# path_dataset  = os.path.join('F:', os.sep, 'Datasets', 'BioSR', dataset_name)
+path_dataset  = os.path.join('data', 'BioSR', dataset_name)
 path_data_gt  = os.path.join(path_dataset, f'gt_sf_{scale_factor}')
 path_data_raw = os.path.join(path_dataset, f'raw_noise_{std_gauss}')
 
