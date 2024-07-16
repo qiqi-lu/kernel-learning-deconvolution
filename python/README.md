@@ -73,11 +73,11 @@ To test a well-trained model, we use `evaluate_model.py`, the output results wil
 Some pre-trained models are provides in `./checkpoints`.
 
 ## Other files
-- `deconv2D_real.py` is used to deconv the real 2D biological images in `BioSR` data set using conventional RLD methods, as there is no PSF is provided, the PSF are learned form the paired data, and then used in this file.
+- `deconv2D_real.py` is used to deconv the real 2D biological images in `BioSR` data set using conventional RLD methods. As there is no PSF is provided, the PSF are learned form the paired data, and then used in this file. You should use `main_kernelnet.py` to train the model, and use `evaluate_model.py` to generate the learned PSF, and then use it to do deconvolution.
 
-- `deconv3D_real.py` is used to deconv the real 3D biological images in `Confocal/STED volume` data set using conventional RLD methods.
+- `deconv3D_real.py` is used to deconv the real 3D biological images in `Confocal/STED volume` data set using conventional RLD methods. As there is no PSF is provided, the PSF are learned form the paired data, and then used in this file. You should use `main_kernelnet.py` to train the model, and use `evaluate_model.py` to generate the learned PSF, and then use it to do deconvolution.
 
-- `deconv3D_live.py` is used to deconv the 3D volumes in `LLSM volume` data set using conventional RLD methods. The parameter `id_sample` and `wave_length` should be modified according to your data directory.
+- `deconv3D_live.py` is used to deconv the 3D volumes in `LLSM volume` data set using conventional RLD methods. The parameter `id_sample` and `wave_length` should be modified according to your data directory. Please enable specific method to do deconvolution.
 
 - `deconv3D_w_gt.py` is used to deconv the 3D images in `simulation` data set, using conventional RLD methods.
 

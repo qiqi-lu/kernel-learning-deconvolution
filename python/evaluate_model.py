@@ -9,20 +9,25 @@ from fft_conv_pytorch import fft_conv
 # ------------------------------------------------------------------------------
 # Parameter setting
 # ------------------------------------------------------------------------------
-root_path = os.path.join('F:', os.sep, 'Datasets')
+# root_path = os.path.join('F:', os.sep, 'Datasets')
+root_path = os.path.join('data')
 device = torch.device('cpu')
 
+# ------------------------------------------------------------------------------
+# the following parameters are abandoned.
+# dataset_name_train, dataset_name_test = 'Microtubule', 'Microtubule'
+# dataset_name_train, dataset_name_test = 'Nuclear_Pore_complex', 'Nuclear_Pore_complex'
+# dataset_name_train, dataset_name_test = 'SimuMix3D_256', 'SimuMix3D_256'
+# dataset_name_train, dataset_name_test = 'SimuMix3D_382', 'SimuMix3D_382'
+
+# Use these to select the datset to evaluate
 # ------------------------------------------------------------------------------
 # simulation data set
 # dataset_name_train, dataset_name_test = 'SimuMix3D_128', 'SimuBeads3D_128'
 # dataset_name_train, dataset_name_test = 'SimuMix3D_128', 'SimuMix3D_128'
-# dataset_name_train, dataset_name_test = 'SimuMix3D_256', 'SimuMix3D_256'
-# dataset_name_train, dataset_name_test = 'SimuMix3D_382', 'SimuMix3D_382'
 # ------------------------------------------------------------------------------
 # confocal/STED volume data set
-# dataset_name_train, dataset_name_test = 'Microtubule', 'Microtubule'
 # dataset_name_train, dataset_name_test = 'Microtubule2', 'Microtubule2'
-# dataset_name_train, dataset_name_test = 'Nuclear_Pore_complex', 'Nuclear_Pore_complex'
 # dataset_name_train, dataset_name_test = 'Nuclear_Pore_complex2', 'Nuclear_Pore_complex2'
 # ------------------------------------------------------------------------------
 # BioSR data set
@@ -46,8 +51,8 @@ if dataset_name_train in ['SimuMix3D_382', 'ZeroShotDeconvNet']:
     kernel_size_bp = [ker_size_bp, 101, 101]
     dim = 3
 
-    # wave_length = '642'
-    wave_length = '560'
+    wave_length = '642'
+    # wave_length = '560'
 
 if dataset_name_train in ['Microtubule', 'Microtubule2', 'Nuclear_Pore_complex', 'Nuclear_Pore_complex2']:
     ker_size_fp, ker_size_bp = 3, 3

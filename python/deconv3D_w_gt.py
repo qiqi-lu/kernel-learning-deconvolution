@@ -14,7 +14,6 @@ import utils.evaluation as eva
 # dataset_name, psf_size = 'SimuBeads3D_128', 31
 dataset_name, psf_size = 'SimuMix3D_128', 31
 # dataset_name, psf_size = 'SimuMix3D_256', 31
-# dataset_name, psf_size = 'SimuMix3D_382', 127
 # ------------------------------------------------------------------------------
 # std_gauss, poisson, ratio = 0, 0, 1
 # std_gauss, poisson, ratio = 0.5, 1, 1

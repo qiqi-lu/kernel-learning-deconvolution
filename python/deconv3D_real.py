@@ -25,14 +25,15 @@ id_data = [0, 1, 2, 3, 4, 5, 6]
 # id_data = [7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
 
 # ------------------------------------------------------------------------------
-enable_traditonal, enable_gaussian, enable_bw, enable_wb = 1, 0, 0, 0
+enable_traditonal, enable_gaussian, enable_bw, enable_wb = 0, 0, 0, 0
 # num_iter_trad, num_iter_gaus, num_iter_bw, num_iter_wb = 15, 30, 30, 2 
 # num_iter_trad, num_iter_gaus, num_iter_bw, num_iter_wb = 20, 30, 30, 2 # NPC
 num_iter_trad, num_iter_gaus, num_iter_bw, num_iter_wb = 15, 30, 30, 2 # MT
 
 # ------------------------------------------------------------------------------
 # load data
-dataset_path  = os.path.join('F:', os.sep, 'Datasets', 'RCAN3D',\
+# dataset_path  = os.path.join('F:', os.sep, 'Datasets', 'RCAN3D',\
+dataset_path  = os.path.join('data', 'RCAN3D',\
     'Confocal_2_STED', dataset_name)
 data_gt_path  = os.path.join(dataset_path, 'gt_1024x1024')
 data_raw_path = os.path.join(dataset_path, 'raw_1024x1024')

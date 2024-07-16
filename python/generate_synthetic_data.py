@@ -71,8 +71,8 @@ print('GT shape:', data_gt_single.shape)
 # multiple images
 # ------------------------------------------------------------------------------
 # id_data = range(1, 101, 1)
-id_data = range(1, 21, 1)
-# id_data = [1]
+# id_data = range(1, 21, 1)
+id_data = [1]
 
 std_gauss, poisson, ratio = 0.5, 1, 0.1
 # std_gauss, poisson, ratio = 0.5, 1, 0.3

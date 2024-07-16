@@ -36,22 +36,24 @@ data_range          = None
 # ------------------------------------------------------------------------------
 # Dataset
 # ------------------------------------------------------------------------------
+# abandon the following parameters
 # dataset_name, dataset_dim = 'tinymicro_synth', 2
 # dataset_name, dataset_dim = 'tinymicro_real', 2
 # dataset_name, dataset_dim = 'lung3_synth', 2
 # dataset_name, dataset_dim = 'CCPs', 2
 # dataset_name, dataset_dim = 'F-actin', 2
 # dataset_name, dataset_dim = 'msi_synth', 2
-# ------------------------------------------------------------------------------
-# dataset_name, dataset_dim = 'F-actin_Nonlinear', 2
-# dataset_name, dataset_dim = 'Microtubules2', 2
+
 # dataset_name, dataset_dim = 'SimuBeads3D_128', 3
+# dataset_name, dataset_dim = 'Microtubule', 3
+# dataset_name, dataset_dim = 'Nuclear_Pore_complex', 3
+# ------------------------------------------------------------------------------
+dataset_name, dataset_dim = 'F-actin_Nonlinear', 2
+# dataset_name, dataset_dim = 'Microtubules2', 2
 # dataset_name, dataset_dim = 'SimuMix3D_128', 3
 # dataset_name, dataset_dim = 'SimuMix3D_256', 3
-dataset_name, dataset_dim = 'SimuMix3D_382', 3
-# dataset_name, dataset_dim = 'Microtubule', 3
+# dataset_name, dataset_dim = 'SimuMix3D_382', 3
 # dataset_name, dataset_dim = 'Microtubule2', 3
-# dataset_name, dataset_dim = 'Nuclear_Pore_complex', 3
 # dataset_name, dataset_dim = 'Nuclear_Pore_complex2', 3
 # dataset_name, dataset_dim = 'ZeroShotDeconvNet', 3
 
@@ -99,9 +101,6 @@ if dataset_name in ['SimuMix3D_382', 'ZeroShotDeconvNet']: # 20 (train)/0 (test)
     # id_range   = [0, 1000]
     training_data_size = id_range[1] - id_range[0]
     batch_size = training_data_size
-    # epochs = 250
-    # epochs = 5
-    # epochs = 5000
 
     lamb = 642
     # lamb = 560
@@ -135,8 +134,8 @@ if dataset_dim == 2:
 if dataset_dim == 3:
     std_init = [4.0, 2.0, 2.0]
 # ------------------------------------------------------------------------------
-# model_name = 'kernet_fp'
-model_name = 'kernet'
+model_name = 'kernet_fp'
+# model_name = 'kernet'
 # ------------------------------------------------------------------------------
 if model_name == 'kernet_fp':
     model_suffix = '_ker_{}_gauss_{}_poiss_{}_sf_{}_mse_over{}_inter_normx_{}_ratio_{}_ts_{}_{}_s100'\
