@@ -90,7 +90,7 @@ The BioSR data set is publicly accessible at https://doi.org/10.6084/m9.figshare
 ### open access code
 The MATLAB codes for generation of simulation phantom are publicly accessible at GitHub repository (https://github.com/MeatyPlus/Richardson-Lucy-Net).
 
-### Acknowledgements
+## Acknowledgements
 We thank Yue Li, et al for publicly releasing the code for phantom simulation, Chang Qiao, et al. for publicly releasing the BioSR data set and LLSM volume data set, Jiji Chen, et al. for publicly releasing the Confocal/STED volume data set, which were significantly contributed to the advancement of our study.
 
 
