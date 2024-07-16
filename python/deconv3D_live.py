@@ -23,6 +23,7 @@ id_sample = [0]
 wave_length = '560'
 
 # ------------------------------------------------------------------------------
+# enable different deconvolution methods
 enable_traditonal, enable_gaussian, enable_bw, enable_wb = 0, 0, 0, 0
 num_iter_trad, num_iter_gaus, num_iter_bw, num_iter_wb = 30, 30, 30, 2 
 

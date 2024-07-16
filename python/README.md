@@ -73,7 +73,13 @@ To test a well-trained model, we use `evaluate_model.py`, the output results wil
 Some pre-trained models are provides in `./checkpoints`.
 
 ## Other files
-The codes in `deconv2D_real.py`, `deconv3D_real.py`, `deconv3D_live.py`, and `deconv3D_w_gt.py` are used to deconv the real 2D biological images in `BioSR` data set, real 3D biological images in `Confocal/STED volume` data set, 3D volumes in `LLSM volume` data set, 3D images in `simulation` data set, respectively, using conventional RLD methods.
+- `deconv2D_real.py` is used to deconv the real 2D biological images in `BioSR` data set using conventional RLD methods, as there is no PSF is provided, the PSF are learned form the paired data, and then used in this file.
+
+- `deconv3D_real.py` is used to deconv the real 3D biological images in `Confocal/STED volume` data set using conventional RLD methods.
+
+- `deconv3D_live.py` is used to deconv the 3D volumes in `LLSM volume` data set using conventional RLD methods. The parameter `id_sample` and `wave_length` should be modified according to your data directory.
+
+- `deconv3D_w_gt.py` is used to deconv the 3D images in `simulation` data set, using conventional RLD methods.
 
 
 
