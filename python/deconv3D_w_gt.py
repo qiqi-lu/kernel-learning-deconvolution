@@ -11,30 +11,30 @@ import methods.deconvolution as dcv
 import utils.evaluation as eva
 
 # ------------------------------------------------------------------------------
-dataset_name, psf_size = 'SimuBeads3D_128', 31
-# dataset_name, psf_size = 'SimuMix3D_128', 31
+# dataset_name, psf_size = 'SimuBeads3D_128', 31
+dataset_name, psf_size = 'SimuMix3D_128', 31
 # dataset_name, psf_size = 'SimuMix3D_256', 31
 # dataset_name, psf_size = 'SimuMix3D_382', 127
 # ------------------------------------------------------------------------------
-std_gauss, poisson, ratio = 0, 0, 1
+# std_gauss, poisson, ratio = 0, 0, 1
 # std_gauss, poisson, ratio = 0.5, 1, 1
 # std_gauss, poisson, ratio = 0.5, 1, 0.3
-# std_gauss, poisson, ratio = 0.5, 1, 0.1
+std_gauss, poisson, ratio = 0.5, 1, 0.1
 # ------------------------------------------------------------------------------
-id_data = [0, 1, 2, 3, 4, 5, 6]
-# id_data = [2]
+# id_data = [0, 1, 2, 3, 4, 5, 6]
+id_data = [0]
 
 scale_factor = 1
 domain = 'fft'
 
 # ------------------------------------------------------------------------------
-enable_traditonal, enable_gaussian, enable_bw, enable_wb = 0, 0, 0, 1
+enable_traditonal, enable_gaussian, enable_bw, enable_wb = 0, 0, 0, 0
 # num_iter_trad, num_iter_gaus, num_iter_bw, num_iter_wb = 100, 100, 100, 30 
 num_iter_trad, num_iter_gaus, num_iter_bw, num_iter_wb = 2, 2, 2, 2
 
 # ------------------------------------------------------------------------------
 # load data
-dataset_path  = os.path.join('F:', os.sep, 'Datasets', 'RLN', dataset_name)
+dataset_path  = os.path.join('data', 'RLN', dataset_name)
 data_gt_path  = os.path.join(dataset_path, 'gt')
 data_raw_path = os.path.join(dataset_path,\
     'raw_psf_{}_gauss_{}_poiss_{}_sf_{}_ratio_{}'\
