@@ -11,8 +11,6 @@ KLD only requires one training sample and two iterations to achieve superior dec
 ## Structures
 The source codes (Python and MATLAB) are saved in `python`.
 
-The source codes for software are saved in `software`. (coming soon ...)
-
 ## Instructions
 For derails instructions, see the `README.md` in the `python` or `software` folder, respectively.
 
