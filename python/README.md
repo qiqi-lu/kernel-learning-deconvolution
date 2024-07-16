@@ -10,7 +10,7 @@ This package includes:
 ## File structure
 `./checkpoints`: include the saved models for different data set.
 
-`./data`: includes the example simulation data used to training and test methods, and partial publicly accessiable fluorescence microscopic images (including BioSR, Confocal/STED volumes, LLSM volumes). The complete data sets are accessible from the original repositories.
+`./data`: includes the example simulation data used to training and test methods, and partial publicly accessiable fluorescence microscopic images (including BioSR, Confocal/STED volumes, LLSM volumes). The complete data sets are accessible from their original repositories.
 
 `./methods`: includes the MATLAB codes of `DeconvBlind` and Python codes of RLD using different backward kernsls.
 
@@ -82,6 +82,13 @@ Some pre-trained models are provides in `./checkpoints`.
 - `deconv2D_real.py` is used to deconv the real 2D biological images in `BioSR` data set using conventional RLD methods. As there is no PSF is provided, the PSF are learned form the paired data, and then used in this file. You should use `main_kernelnet.py` to train the model, and use `evaluate_model.py` to generate the learned PSF, and then use it to do deconvolution.
 
 - `deconv3D_real.py` is used to deconv the real 3D biological images in `Confocal/STED volume` data set using conventional RLD methods. As there is no PSF is provided, the PSF are learned form the paired data, and then used in this file. You should use `main_kernelnet.py` to train the model, and use `evaluate_model.py` to generate the learned PSF, and then use it to do deconvolution.
+
+## Additional informations
+### open access datasets
+The BioSR data set is publicly accessible at https://doi.org/10.6084/m9.figshare.13264793.v9. The confocal/STED volume data set is publicly available at https://zenodo.org/record/4624364#.YF3jsa9Kibg. The LLSM volume data set is publicly accessible at https://zenodo.org/records/7261163.
+
+### open access code
+The MATLAB codes for generation of simulation phantom are publicly accessible at GitHub repository (https://github.com/MeatyPlus/Richardson-Lucy-Net).
 
 
 
