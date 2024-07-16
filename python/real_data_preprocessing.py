@@ -4,9 +4,6 @@ import skimage.io as io
 import os
 
 # ------------------------------------------------------------------------------
-# dataset_name = 'Microtubule'
-# dataset_name = 'Nuclear_Pore_complex'
-
 dataset_name = 'Microtubule2'
 # dataset_name = 'Nuclear_Pore_complex2'
 

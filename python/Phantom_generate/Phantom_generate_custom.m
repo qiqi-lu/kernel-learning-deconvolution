@@ -1,7 +1,7 @@
 clear all
 
 %% SET OUTPUT PATH
-pathMain1= 'data\RLN\SimuMix3D_128_live\gt\';
+pathMain1= 'data\RLN\SimuMix3D_128e\gt\';
 % pathMain1= 'data\RLN\SimuMix3D_256\gt\';
 % pathMain1= 'data\RLN\SimuMix3D_382\gt\';
 mkdir(pathMain1)
