@@ -40,10 +40,16 @@ The python package used in our projects:
 To use our code, you shold create a virtual enviroment and install the required packages first:
 
 ```
-$ conda create -n kld python=3.11.9 
-$ conda activate kld
+$ conda create -n pytorch python=3.11.9 
+$ conda activate pytorch
 $ pip install -r requirements.txt
 ```
+The cd into the python folder
+
+```
+cd .\python\
+```
+
 Please always pay attention to the path setting in the code, and modifiy the to your own working path.
 
 ## Training data set generation
