@@ -1,2 +1,0 @@
-[napari.manifest]
-napari-hello = napari_hello:napari.yaml
