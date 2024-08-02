@@ -8,10 +8,12 @@ It enhances the deconvolution performance and speed through learning the forward
 
 KLD only requires one training sample and two iterations to achieve superior deconvolution perfromance and speed compared to traditional RLD and its variants (which using an unmatched backeard kernel, such as Gaussian, Butterworth, and Wiener-Butterworth (WB) backward kernels).
 
-## Source Code
+## Instructions
 The source codes (Python and MATLAB) are saved in `python`.
 
-## `napari-kld` plugin
+**For derails instructions, see the `README.md` in the `python` folder, respectively.**
+
+## napari-kld plugin
 A `napari` plugin, named `napari-kld`, was developed for KLD.
 
 The source code is saved at https://github.com/qiqi-lu/napari-kld, please go to this repository for more information.
@@ -26,6 +28,5 @@ And it is also accessable through `napari hub` at https://www.napari-hub.org/plu
 
 *You should install `napari` for using `napari-kld` plugin.*
 
-## Instructions
-**For derails instructions, see the `README.md` in the `python` folder, respectively.**
+
 
