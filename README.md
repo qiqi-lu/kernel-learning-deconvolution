@@ -11,7 +11,7 @@ KLD only requires one training sample and two iterations to achieve superior dec
 ## Instructions
 The source codes (Python and MATLAB) are saved in `python`.
 
-**For derails instructions, see the `README.md` in the `python` folder, respectively.**
+**For derails instructions, see the `README.md` in the `python` folder**
 
 ## napari-kld plugin
 A `napari` plugin, named `napari-kld`, was developed for KLD.
