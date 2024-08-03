@@ -1,6 +1,6 @@
 # Kernel Learning Deconvolution (KLD)
 
-This repsitory consists of the python codes for the paper "**Kernel learning enables fluorescence microscopic image deconvolution with enhanced performance and speed**"
+This repository consists of the python codes for the paper "**Kernel learning enables fluorescence microscopic image deconvolution with enhanced performance and speed**"
 
 ## Introduction 
 KLD is an algorithm for fluorescence microscopic image deconvolution.
