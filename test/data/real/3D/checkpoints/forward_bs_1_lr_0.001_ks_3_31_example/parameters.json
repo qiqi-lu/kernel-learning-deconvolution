@@ -1,0 +1,1 @@
+{"data_path": "D:\\GitHub\\napari-kld\\test\\data\\real\\3D\\train", "psf_path": "", "fp_path": "None", "num_channel": 1, "data_dim": 3, "num_iter": 1, "ks_z": 3, "ks_xy": 31, "model_name": "kernet_fp", "num_epoch": 500, "batch_size": 1, "self_supervised": false, "learning_rate": 0.001, "optimizer": "Adam", "decay_step": 0, "decay_rate": 0.0, "preprocess": 0}
